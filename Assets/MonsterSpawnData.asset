@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b7ba1c780fd73643b2a01fa4b48daa1, type: 3}
+  m_Name: MonsterSpawnData
+  m_EditorClassIdentifier: 
+  rounds:
+  - round: 1
+    spawnChances:
+    - 100
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - round: 2
+    spawnChances:
+    - 95
+    - 5
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - round: 3
+    spawnChances:
+    - 85
+    - 10
+    - 5
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - round: 4
+    spawnChances:
+    - 70
+    - 15
+    - 10
+    - 5
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - round: 5
+    spawnChances:
+    - 50
+    - 20
+    - 15
+    - 10
+    - 5
+    - 0
+    - 0
+    - 0
+    - 0
+  - round: 6
+    spawnChances:
+    - 35
+    - 15
+    - 20
+    - 15
+    - 10
+    - 5
+    - 0
+    - 0
+    - 0
+  - round: 7
+    spawnChances:
+    - 25
+    - 10
+    - 15
+    - 20
+    - 15
+    - 10
+    - 5
+    - 0
+    - 0
+  - round: 8
+    spawnChances:
+    - 20
+    - 5
+    - 10
+    - 15
+    - 20
+    - 15
+    - 10
+    - 5
+    - 0
+  - round: 9
+    spawnChances:
+    - 5
+    - 10
+    - 10
+    - 15
+    - 20
+    - 15
+    - 10
+    - 10
+    - 5
