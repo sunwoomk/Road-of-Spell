@@ -451,6 +451,7 @@ GameObject:
   - component: {fileID: 4528888763381533399}
   - component: {fileID: 4528888763381533392}
   - component: {fileID: 4528888763381533393}
+  - component: {fileID: 3699332081051990480}
   m_Layer: 0
   m_Name: Monster9
   m_TagString: Untagged
@@ -523,6 +524,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4277936243970900915, guid: 9ad131497dd2d1545b6c35e7cc732b35, type: 3}
+--- !u!114 &3699332081051990480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4528888763381533394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 729031dc5c5e8df45b4650a4181cb026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
 --- !u!1 &4528888763608222259
 GameObject:
   m_ObjectHideFlags: 0

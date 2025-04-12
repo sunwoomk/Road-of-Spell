@@ -12,13 +12,16 @@ public class MonsterSpawner : MonoBehaviour
     public int minMonsters = 1;  // 최소 스폰 마릿수
     public int maxMonsters = 3;  // 최대 스폰 마릿수 (라운드가 올라가면 증가 가능)
 
+    public List<GameObject> activeMonsters = new List<GameObject> ();
+
     void Start()
     {
         StartCoroutine(SpawnMonsters());
     }
 
-    IEnumerator SpawnMonsters()
+    public IEnumerator SpawnMonsters()
     {
+        round++;
         if (spawnData == null)
         {
             Debug.LogError("MonsterSpawnData가 설정되지 않았습니다!");
@@ -43,7 +46,8 @@ public class MonsterSpawner : MonoBehaviour
             GameObject selectedMonster = GetRandomMonster(roundData);  // 확률에 따라 몬스터 선택
             if (selectedMonster != null)
             {
-                Instantiate(selectedMonster, spawnPoint.position, Quaternion.identity);
+                GameObject monster = Instantiate(selectedMonster, spawnPoint.position, Quaternion.identity);
+                activeMonsters.Add(monster);
             }
             yield return new WaitForSeconds(0.5f);  // 몬스터 스폰 간격
         }
